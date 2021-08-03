@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.openproject.xiaojie.android_ipprint.MainActivity">
+
+    <Button
+        android:id="@+id/set_ip"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:text="SET IP"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/ip_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@id/set_ip"
+        android:hint="输入 IP 端口默认 9100"
+        android:text="192.168.68.114" />
+
+    <EditText
+        android:id="@+id/print_text"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/ip_address"
+        android:layout_alignParentEnd="true"
+        android:hint="test text"
+        android:text="Test printer!" />
+
+    <Button
+        android:id="@+id/connect_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/print_text"
+        android:layout_marginTop="56dp"
+        android:text="Print" />
+</RelativeLayout>
